@@ -13,13 +13,13 @@ body{font-family:'Lato',sans-serif;font-weight:300;color:#3a2e26;background:#fff
 .cover-bricks,.cover-leaves{position:absolute;inset:0;pointer-events:none;}
 .cover-content{position:relative;z-index:3;text-align:center;display:flex;flex-direction:column;align-items:center;padding-bottom:clamp(295px,78vw,480px);}
 
-.cover-guest{font-family:'Cormorant Garamond',serif;font-size:clamp(26px,6.5vw,50px);font-weight:400;font-style:italic;color:#fff;text-shadow:0 2px 20px rgba(120,60,10,0.35);opacity:0;animation:fadeUp 0.9s ease 0.3s forwards;margin-bottom:0.6rem;letter-spacing:0.02em;}
+
 .cover-names{font-family:'Great Vibes',cursive;font-size:clamp(62px,16vw,118px);font-weight:400;color:#fff8e8;line-height:1.12;text-shadow:0 3px 32px rgba(100,45,5,0.38);opacity:0;animation:fadeUp 1s ease 0.7s forwards;margin-bottom:0.5rem;}
 .cover-amp{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:0.38em;display:block;color:rgba(255,255,255,0.75);margin:0.04em 0;letter-spacing:0.15em;}
 .cover-date{font-family:'Lato',sans-serif;font-weight:300;letter-spacing:0.32em;font-size:14px;color:rgba(255,255,255,0.95);margin-top:0.5rem;opacity:0;animation:fadeUp 0.9s ease 1.1s forwards;}
 .cover-tagline{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:17px;color:rgba(255,255,255,0.82);margin-top:0.6rem;opacity:0;animation:fadeUp 0.9s ease 1.6s forwards;}
 .cover-sep{display:flex;align-items:center;justify-content:center;gap:8px;opacity:0;margin:0.7rem 0;}
-.cover-sep.s1{animation:fadeUp 0.9s ease 0.75s forwards;}
+
 .cover-sep.s2{animation:fadeUp 0.9s ease 1.25s forwards;}
 .cover-sep-line{width:36px;height:0.5px;background:rgba(255,255,255,0.55);}
 .cover-sep-diamond{width:5px;height:5px;background:rgba(255,255,255,0.75);transform:rotate(45deg);}
@@ -112,8 +112,6 @@ body{font-family:'Lato',sans-serif;font-weight:300;color:#3a2e26;background:#fff
 </g>
 </svg>
 <div class="cover-content">
-  <div class="cover-guest">%%GUEST_NAME%%</div>
-  <div class="cover-sep s1"><div class="cover-sep-line"></div><div class="cover-sep-diamond"></div><div class="cover-sep-line"></div></div>
   <div class="cover-names">Dimithri<span class="cover-amp">and</span>Radeesh</div>
   <div class="cover-sep s2"><div class="cover-sep-line"></div><div class="cover-sep-diamond"></div><div class="cover-sep-line"></div></div>
   <div class="cover-date">31 &middot; JULY &middot; 2026</div>
@@ -130,7 +128,7 @@ body{font-family:'Lato',sans-serif;font-weight:300;color:#3a2e26;background:#fff
 <div class="section-label">The celebration</div>
 <div class="section-title">Event Details</div>
 <div class="divider"><div class="divider-line"></div><div class="divider-dot"></div><div class="divider-line"></div></div>
-<p style="text-align:center;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:16px;color:#7a5a3a;margin-bottom:2rem;line-height:1.7;">Mr. &amp; Mrs. Chandana Wickramasinghe together with<br>Mr. &amp; Mrs. Irosha Aponso<br><span style="font-style:normal;font-size:13px;color:#b07840;letter-spacing:0.1em;">take the pleasure of inviting you</span></p>
+<p style="text-align:center;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:16px;color:#7a5a3a;margin-bottom:2rem;line-height:1.7;">Mr. &amp; Mrs. Chandana Wickramasinghe together with<br>Mr. &amp; Mrs. Irosha Aponso<br><span style="font-style:normal;font-size:13px;color:#b07840;letter-spacing:0.1em;">take the pleasure of inviting</span><br><span style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:22px;font-weight:400;color:#3a2e26;">%%GUEST_NAME%%</span></p>
 <div class="details-grid">
 <div class="detail-card reveal reveal-delay-1"><span class="detail-icon">&#128197;</span><div class="detail-card-title">Date</div><div class="detail-card-val">31 July 2026</div><div class="detail-card-sub">Friday</div></div>
 <div class="detail-card reveal reveal-delay-2"><span class="detail-icon">&#128343;</span><div class="detail-card-title">Time</div><div class="detail-card-val">8:30 AM &#8211; 3:30 PM</div><div class="detail-card-sub">Poruwa Ceremony at 10:00 AM</div></div>
