@@ -122,9 +122,10 @@ var TEMPLATE = '';
 var guests = [];
 
 // Load assets from GitHub Pages
+var V = '?v=1780753462';
 Promise.all([
-  fetch(BASE_URL + '/assets/portrait.txt').then(function(r){ return r.text(); }),
-  fetch(BASE_URL + '/assets/template.html').then(function(r){ return r.text(); })
+  fetch(BASE_URL + '/assets/portrait.txt' + V).then(function(r){ return r.text(); }),
+  fetch(BASE_URL + '/assets/template.html' + V).then(function(r){ return r.text(); })
 ]).then(function(results) {
   SVG_SRC = results[0].trim();
   TEMPLATE = results[1];
