@@ -277,7 +277,7 @@ body{font-family:'Lato',sans-serif;font-weight:300;color:#3a2e26;background:#fff
 </div>
 <div class="form-group">
 <label class="form-label">A message for the couple (optional)</label>
-<textarea class="form-textarea" id="rm" rows="3" placeholder="Share your wishes..."></textarea>
+<textarea class="form-textarea" id="rm" rows="3" placeholder="Share your wishes...">%%ENDTEXTAREA%%
 </div>
 <button class="submit-btn" onclick="send()">Send my RSVP &#10022;</button>
 </div>
@@ -443,7 +443,7 @@ function updateStats(){
 }
 
 function buildHTML(g){
-  var tpl=document.getElementById('invite-tpl').value;
+  var tpl=document.getElementById('invite-tpl').value.replace(/%%ENDTEXTAREA%%/g,'</textarea>');
   var dn=g.display.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
   var jdn=g.display.replace(/\\/g,'\\\\').replace(/'/g,"\\'");
   var jt=g.title.replace(/\\/g,'\\\\').replace(/'/g,"\\'");
