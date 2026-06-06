@@ -211,10 +211,13 @@ function copyMsg(id) {
   if (!g || !g.link) return;
   var msg = "Dear " + g.display + ","
     + "\n\nWe're Getting Married! \uD83D\uDC8D"
-    + "\nAfter all the stories, adventures, laughter, and countless memories, we're finally making it official!"
-    + "\nAnd because no celebration would be complete without our amazing friends, we'd love for you to join us as we tie the knot and dance the night away."
-    + "\n\n\uD83D\uDC49 Click here to view your invitation and RSVP: " + g.link
-    + "\n\nPlease be kind enough to RSVP by 15th July. \uD83D\uDE4F\uD83C\uDFFD";
+    + "\n\nAfter all the stories, adventures, laughter, and countless memories, we're finally making it official!"
+    + "\n\nJoin us as we exchange our vows, share a wonderful evening, and create memories that we'll cherish for a lifetime."
+    + "\n\nYour presence would make our day even more meaningful, and we can't wait to celebrate with you."
+    + "\n\uD83D\uDC49 Click here to view your invitation and RSVP: " + g.link
+    + "\nPlease be kind enough to RSVP by 15th July. \uD83D\uDE4F\uD83C\uDFFD"
+    + "\n\nWith love,"
+    + "\nDimithri & Radeesh";
   navigator.clipboard.writeText(msg).then(function(){ showToast('Message copied!'); });
 }
 
