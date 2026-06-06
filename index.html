@@ -397,6 +397,7 @@ function renderList(){
     r.className='gl-row';
     var linkHtml=g.link
       ?'<button class="gl-link" onclick="copyLink('+g.id+')">Copy link</button>'
+       +'<button class="gl-link" style="margin-left:6px;color:#9a7a5a;" onclick="copyMsg('+g.id+')">Copy message</button>'
       :'<span style="font-size:11px;color:#c4a882;">not pushed</span>';
     var statusClass=g.status==='accepted'?'accepted':g.status==='declined'?'declined':'pending';
     r.innerHTML='<span class="gl-name">'+esc(g.display)+'</span>'
@@ -412,6 +413,26 @@ function copyLink(id){
   var g=guests.find(function(x){return x.id===id;});
   if(!g||!g.link)return;
   navigator.clipboard.writeText(g.link).then(function(){showToast('Link copied!');});
+}
+
+function copyMsg(id){
+  var g=guests.find(function(x){return x.id===id;});
+  if(!g||!g.link)return;
+  var msg="Dear "+g.display+","
+    +"
+
+We're Getting Married! 💍"
+    +"
+After all the stories, adventures, laughter, and countless memories, we're finally making it official!"
+    +"
+And because no celebration would be complete without our amazing friends, we'd love for you to join us as we tie the knot and dance the night away."
+    +"
+
+👉 Click here to view your invitation and RSVP: "+g.link
+    +"
+
+Please be kind enough to RSVP by 15th July. 🙏🏽";
+  navigator.clipboard.writeText(msg).then(function(){showToast('Message copied!');});
 }
 
 function updateStats(){
