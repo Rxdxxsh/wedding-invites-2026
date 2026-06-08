@@ -116,7 +116,7 @@ input::placeholder{color:#c4a882;}
 
 <script>
 var APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx_iLkrjOtcN9-G0r2aGUpHGFNQ8SqpJoHmny5qahp0uTg8zr5aL_9Cd0729QQ_ZDwN5A/exec';
-var BASE_URL = 'https://rxdxxsh.github.io/wedding-invites-2026';
+var BASE_URL = 'https://www.radeeshwedsdimithri.publicvm.com';
 var SVG_SRC = '';
 var TEMPLATE = '';
 var guests = [];
@@ -284,7 +284,7 @@ async function pushAll() {
       var html = buildHTML(g);
       var path = 'invites/' + g.slug + '.html';
       await pushFile(cfg, path, html);
-      g.link = 'https://' + cfg.owner + '.github.io/' + cfg.repo + '/invites/' + g.slug + '.html';
+      g.link = 'https://www.radeeshwedsdimithri.publicvm.com/invites/' + g.slug + '.html';
       await addToSheet(g, g.link);
       renderList();
     }
